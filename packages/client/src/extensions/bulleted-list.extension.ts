@@ -37,6 +37,9 @@ const bulletedListExtension: ExtensionFunc = async (blocks) => {
       });
     } else if (start) {
       pushList();
+      if (block.type !== 'bulleted_list_item') {
+        next.push(block);
+      }
     } else {
       next.push(block);
     }
