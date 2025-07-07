@@ -9,6 +9,7 @@
     "vercel-build": "next build",
     "prepare": "npx is-ci || npx husky install",
     "build": "turbo build",
+    "build:client": "turbo build --filter=@notion-render/client",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "dev": "turbo run dev",

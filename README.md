@@ -119,6 +119,12 @@ const renderer = new NotionRenderer({
   renderers: [paragraphRenderer],
 });
 ```
+# Build and publish client only
+To build only the client project, and publish it locally, as .tgz package:
+* run `build:client` (it will build project into hidden dist folder)
+* go to `notion-render/packages/client` folder
+* adduject version in `package.json`
+* run `npm pack` to create
 
 # Contributing
 
